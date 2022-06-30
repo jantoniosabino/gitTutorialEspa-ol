@@ -1,4 +1,9 @@
 # TUTORIAL BÁSICO GIT
+<p align="center">
+  <a href="https://git-scm.com/">
+    <img src="https://git-scm.com/images/logo@2x.png" alt="Git logo" width="200" height="80">
+  </a>
+</p>
 
 
 ## CONFIGURACIÓN INICIAL DE GIT

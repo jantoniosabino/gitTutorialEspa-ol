@@ -5,6 +5,20 @@
   </a>
 </p>
 
+## Indice
+
+* [Configuración inicial de git](#configuracion)
+* [Gitbash sistema de archivos](#gitbash)
+* [Comandos GIT](#comandos-git)
+    * [Crear repositorios](#crear)
+    * [Observar repositorio](#observar)
+    * [Hacer cambios](#cambios)
+    * [Sincronización](#sincronizacion)
+    * [Ramas](#ramas)
+* [El archivo .gitignore](#gitignore)
+
+
+<a name="configuracion">
 
 ## CONFIGURACIÓN INICIAL DE GIT
 
@@ -14,6 +28,8 @@
 * `git config -e` Abre el archivo de configuración en el editor
 * `git config --global core.autocrlf true` Para configurar los saltos de linea en auto, ya que dependiendo del S.O. de cada desarrollador guardará los caracteres especiales de salto de una forma diferente. Si estamos en windows usaremos "true", si estamos en mac usaremos "input"
 * `git config -h` Muestra un listado de todas las configuraciones que podemos hacer
+
+<a name="gitbash">
 
 ## GITBASH SISTEMA DE ARCHIVOS
 
@@ -31,7 +47,11 @@
 | `mv <file1> <file2>` | Renombrar archivo |
 | `cat <file>` | Mostrar contenido de archivo |
 
+<a name="comandos-git">
+
 ## COMANDOS GIT
+
+<a name="crear">
 
 ### CREAR REPOSITORIO
 
@@ -40,6 +60,8 @@
 | `git init`| Inicializar repositorio en el directorio actual |
 | `git init <folder>`| Crear carpeta y inicializar repositorio en él |
 | `git clone`| Hace copia del código del servidor a la computadora |
+
+<a name="observar">
 
 ### OBSERVAR REPOSITORIO
 
@@ -55,6 +77,8 @@
 | `git log -p <file / folder>` | Ver historail de cambios de un archivo o carpeta |
 | `git log --oneline` | Muestra el historial simplificado  |
 
+<a name="cambios">
+
 ### HACER CAMBIOS
 
 | Sintaxis    | Descripción |
@@ -66,6 +90,8 @@
 | `git reset <commit>`| Volver a un commit anterior especificado |
 | `git reset --hard`| Volver al ultimo commit guardado |
 
+<a name="sincronizacion">
+
 ### SINCRONIZACION
 
 | Sintaxis    | Descripción |
@@ -75,6 +101,8 @@
 | `git push -u origin <rama>`| Subir otra rama |
 | `git pull`| Trae los cambios de otros desarrolladores y los une a la rama|
 | `git fetch`| Trae los cambios de otros desarrolladores y NO los une a la rama|
+
+<a name="ramas">
 
 ### RAMAS
 
@@ -88,6 +116,8 @@
 | `git checkout -b <rama>` | Crear una rama |
 | `git merge <ramab>` | Traer los cambios de ramab a master (fusionar) |
 | `git remote add origin https://github.com/jantoniosabino/gitApuntes.git` | Subir proyecto a servidor por primera vez |
+
+<a name="gitignore">
 
 ## EL ARCHIVO .gitignore
 

@@ -90,8 +90,23 @@
 | `git reset <file>`| Eliminar archivo del staging |
 | `git reset <commit>`| Volver a un commit anterior especificado |
 | `git reset --hard`| Volver al ultimo commit guardado |
-| `git checkout <commit> <file>`| Volver un archivo a un commit anterior especificado |
+| `git checkout <commit> o <file>`| Volver un archivo a un commit anterior especificado |
 | `git checkout HEAD <file>`| Volver un archivo al último commit guardado|
+
+
+>A veces tenemos que cambiar de rama por emergencia y necesitamos tener el estado del repositorio limpio pero no nos interesa hacer un commit. Podemos guardar un snapshoot del directorio y el estado con stash para recuperarlo despues
+
+| Sintaxis    | Descripción |
+|-------- | ---------- |
+|`git stash` | guardar cambios en el stash y volver al último commit |
+|`git stash sav <descripción>` | guardar cambios en el stash y volver al último commit dando descripcion al stash |
+|`git stash list`| ver listado de stash hechos|
+|`git stash -h`| Muestra ayuda de stash |
+|`git stash apply`|Vuelve a cargar los cambnios del ultimo stash al directorio de trabajo|
+|`git stash drop` | elimina el ultimo stas|
+|`git stash show stash0\{\0}` | Muestra los cambios realizados en el stash especificado |
+| `git stash pop` | hace un apply y un drop seguidamente |
+| `git stash branch <nuevaRama> <stash>` | crea una rama nueva a partir de un stash |
 
 
 <a name="sincronizacion">
@@ -113,10 +128,11 @@
 | Sintaxis    | Descripción |
 | ------    | ------            | 
 | `git branch` | Ver en qué rama nos encontramos |
-| `git branch` | Ver todas las ramas locales y remotas |
+| `git branch -a` | Ver todas las ramas locales y remotas |
+| `git branch -r` | Ver todas las ramas remotas |
 | `git branch <nuevaRama>` | Crear rama |
-| `git branch -b <nuevaRama>` | Crear rama y cambiar a esta |
-| `git branch -d <rama>` | Eliminar rama |
+| `git branch -d <rama>` | Eliminar rama local|
+| `git push origin --delete <rama>` | Eleminar rama remota |
 | `git checkout <rama>` | Cambiar de rama |
 | `git checkout -b <rama>` | Crear una rama |
 | `git merge <ramab>` | Traer los cambios de ramab a master (fusionar) |
@@ -132,5 +148,6 @@ En este archivo incluiremos todos los archivos y rutas que no queremos subir al 
 <a name="herramientas">
 
 ## HERRAMIENTAS
-* [Git-Tower](https://www.git-tower.com)
+* [Github desktop](https://desktop.github.com/)
+* [SourceTree](https://www.sourcetreeapp.com/)
 

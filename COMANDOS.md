@@ -16,6 +16,7 @@
     * [Sincronización](#sincronizacion)
     * [Ramas](#ramas)
 * [El archivo .gitignore](#gitignore)
+* [Herramientas](#herramientas)
 
 
 <a name="configuracion">
@@ -89,6 +90,9 @@
 | `git reset <file>`| Eliminar archivo del staging |
 | `git reset <commit>`| Volver a un commit anterior especificado |
 | `git reset --hard`| Volver al ultimo commit guardado |
+| `git checkout <commit> <file>`| Volver un archivo a un commit anterior especificado |
+| `git checkout HEAD <file>`| Volver un archivo al último commit guardado|
+
 
 <a name="sincronizacion">
 
@@ -111,6 +115,7 @@
 | `git branch` | Ver en qué rama nos encontramos |
 | `git branch` | Ver todas las ramas locales y remotas |
 | `git branch <nuevaRama>` | Crear rama |
+| `git branch -b <nuevaRama>` | Crear rama y cambiar a esta |
 | `git branch -d <rama>` | Eliminar rama |
 | `git checkout <rama>` | Cambiar de rama |
 | `git checkout -b <rama>` | Crear una rama |
@@ -123,3 +128,9 @@
 
 En este archivo incluiremos todos los archivos y rutas que no queremos subir al repositorio
 > Aquí puede añadir archivos de variables de configuración local, contraseñas, la carpeta /node_modules, etc... 
+
+<a name="herramientas">
+
+## HERRAMIENTAS
+* [Git-Tower](https://www.git-tower.com)
+

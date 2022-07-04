@@ -88,12 +88,13 @@
 | `git add .`| Añadir al staging todos los archivos cambiados |
 | `git commit -m "titulo descriptivo"` | Pasar del stagin al repositorio local (`-m` para dar título al snapshot) |
 | `git commit --amend` | Incluir cambios en el último commit en lugar de crear uno nuevo |
-| `git reset <file>`| Eliminar archivo del staging |
-| `git reset <commit>`| Volver a un commit anterior especificado |
-| `git reset --hard`| Volver al ultimo commit guardado |
 | `git checkout -- <file>`| Deshacer cambios en un archivo |
 | `git checkout <commit> o <file>`| Volver un archivo a un commit anterior especificado |
 | `git checkout HEAD <file>`| Volver un archivo al último commit guardado|
+| `git revert HEAD` | Revierte los cambios y carga el ultimo commit |
+| `git reset <file>`| Eliminar archivo del staging |
+| `git reset <commit>`| Volver a un commit anterior especificado |
+| `git reset --hard`| Volver al ultimo commit guardado y eliminar cambios|
 
 
 >A veces tenemos que cambiar de rama por emergencia y necesitamos tener el estado del repositorio limpio pero no nos interesa hacer un commit. Podemos guardar un snapshoot del directorio y el estado con stash para recuperarlo despues
